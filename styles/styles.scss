@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Brique;
+    src: url(../resources/Brique/BriqueRegular.otf) format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Brique';
+    background-color: #8a1313;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*#main {
+    background: url("../resources/contratapa.svg");
+}*/
+
+#sct-titlecountdown {
+    margin-top: 70px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #main-title {
+        margin-bottom: 50px;
+        font-family: Brique;
+    }
+    #img-title {
+        height: 50px;
+        width: 50px;
+    }
+    #countdown {
+        h1 {
+            font-family: Brique;
+        }
+        li {
+            display: inline-block;
+            font-size: 1.5em;
+            list-style-type: none;
+            padding: 1em;
+            text-transform: uppercase;
+          }
+          
+        li span {
+            display: block;
+            font-size: 4.5rem;
+        }
+    }
+}
+
+#sct-contact {
+    margin-bottom: 40px;
+    #form {
+        #email {
+            padding: 7px;
+            background-color: #FFFFFF;
+        }
+        button {
+            padding: 7px;
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+    }
+}
+
+#sct-spotify {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+   padding: 10px;
+   font-size: 10px;
+   background-color: #000000;
+   p {
+       color: #FFFFFF;
+       background-color: #000000;
+   }
+}

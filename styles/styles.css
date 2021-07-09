@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Brique;
+  src: url(../resources/Brique/BriqueRegular.otf) format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+  font-family: 'Brique';
+  background-color: #8a1313;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*#main {
+    background: url("../resources/contratapa.svg");
+}*/
+#sct-titlecountdown {
+  margin-top: 70px;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sct-titlecountdown #main-title {
+  margin-bottom: 50px;
+  font-family: Brique;
+}
+
+#sct-titlecountdown #img-title {
+  height: 50px;
+  width: 50px;
+}
+
+#sct-titlecountdown #countdown h1 {
+  font-family: Brique;
+}
+
+#sct-titlecountdown #countdown li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+#sct-titlecountdown #countdown li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+#sct-contact {
+  margin-bottom: 40px;
+}
+
+#sct-contact #form #email {
+  padding: 7px;
+  background-color: #FFFFFF;
+}
+
+#sct-contact #form button {
+  padding: 7px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+#sct-spotify {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  padding: 10px;
+  font-size: 10px;
+  background-color: #000000;
+}
+
+footer p {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+/*# sourceMappingURL=styles.css.map */
