@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Brique;
   src: url(../resources/Brique/BriqueRegular.otf) format("opentype");
@@ -30,7 +31,7 @@
 }
 
 /*#main {
-    background: url("../resources/contratapa.svg");
+    background: url("../resources/contratapasvgmitaddetamaño.svg");
 }*/
 #sct-titlecountdown {
   margin-top: 70px;
@@ -105,10 +106,50 @@ footer {
   padding: 10px;
   font-size: 10px;
   background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer p {
   color: #FFFFFF;
   background-color: #000000;
+}
+
+footer #footer-rightside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #footer-rightside #p-2 {
+  margin-right: 15px;
+}
+
+footer #footer-rightside i {
+  background-color: #000000;
+  color: #FFFFFF;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -5px;
 }
 /*# sourceMappingURL=styles.css.map */

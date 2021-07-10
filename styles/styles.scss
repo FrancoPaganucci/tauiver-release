@@ -20,7 +20,7 @@
 }
 
 /*#main {
-    background: url("../resources/contratapa.svg");
+    background: url("../resources/contratapasvgmitaddetamaño.svg");
 }*/
 
 #sct-titlecountdown {
@@ -82,8 +82,29 @@ footer {
    padding: 10px;
    font-size: 10px;
    background-color: #000000;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
    p {
        color: #FFFFFF;
        background-color: #000000;
+   }
+   #footer-rightside {
+       display: flex;
+       justify-content: space-between;
+       background-color: #000000;
+       align-items: center;
+       #p-2 {
+           margin-right: 15px;
+       }
+       i {
+           background-color: #000000;
+           color: #FFFFFF;
+           height: 30px;
+           width: 30px;
+           display: flex;
+           align-items: center;
+           margin-top: -5px;
+       }
    }
 }
