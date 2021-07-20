@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: Brique;
   src: url(../resources/Brique/BriqueRegular.otf) format("opentype");
@@ -11,7 +10,7 @@
           box-sizing: border-box;
   color: black;
   font-family: 'Brique';
-  background-color: #8a1313;
+  background-image: src("../re");
 }
 
 .flex-column {
@@ -30,11 +29,12 @@
           justify-content: center;
 }
 
-/*#main {
-    background: url("../resources/contratapasvgmitaddetamaño.svg");
-}*/
+#main {
+  background: url("../resources/Fondo-web-para-Fede.svg");
+}
+
 #sct-titlecountdown {
-  margin-top: 70px;
+  margin-top: -20px;
   margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,18 +48,31 @@
           align-items: center;
 }
 
-#sct-titlecountdown #main-title {
-  margin-bottom: 50px;
-  font-family: Brique;
+@media screen and (max-width: 425px) {
+  #sct-titlecountdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 15px;
+  }
 }
 
 #sct-titlecountdown #img-title {
-  height: 50px;
-  width: 50px;
+  height: 450px;
 }
 
 #sct-titlecountdown #countdown h1 {
   font-family: Brique;
+}
+
+@media screen and (max-width: 425px) {
+  #sct-titlecountdown #countdown h1 {
+    font-size: 20px;
+  }
 }
 
 #sct-titlecountdown #countdown li {
@@ -68,6 +81,12 @@
   list-style-type: none;
   padding: 1em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 425px) {
+  #sct-titlecountdown #countdown li {
+    font-size: 1em;
+  }
 }
 
 #sct-titlecountdown #countdown li span {
@@ -84,15 +103,27 @@
   background-color: #FFFFFF;
 }
 
+#sct-contact #form #error {
+  display: none;
+}
+
 #sct-contact #form button {
   padding: 7px;
   background-color: #000000;
   color: #FFFFFF;
 }
 
+#sct-contact #success {
+  display: none;
+}
+
 #sct-spotify {
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 40px;
+  margin-left: 115px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,6 +131,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: flex;
 }
 
 footer {

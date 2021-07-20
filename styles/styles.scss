@@ -9,7 +9,8 @@
     box-sizing: border-box;
     color: black;
     font-family: 'Brique';
-    background-color: #8a1313;
+    //background-color: #8a1313;
+    background-image: src('../re');
 }
 
 .flex-column {
@@ -19,39 +20,48 @@
     justify-content: center;
 }
 
-/*#main {
-    background: url("../resources/contratapasvgmitaddetamaño.svg");
-}*/
+#main {
+    background: url("../resources/Fondo-web-para-Fede.svg");
+}
 
 #sct-titlecountdown {
-    margin-top: 70px;
+    margin-top: -20px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    #main-title {
-        margin-bottom: 50px;
-        font-family: Brique;
+    @media screen and (max-width: 425px) {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
     }
     #img-title {
-        height: 50px;
-        width: 50px;
+        height: 450px;
     }
     #countdown {
         h1 {
             font-family: Brique;
+            //color: #FFFFFF;
+            @media screen and (max-width: 425px) {
+                font-size: 20px;
+            }
         }
         li {
             display: inline-block;
             font-size: 1.5em;
+            //color: #FFFFFF;
             list-style-type: none;
             padding: 1em;
             text-transform: uppercase;
+            @media screen and (max-width: 425px) {
+                font-size: 1em;
+            }
           }
           
         li span {
             display: block;
             font-size: 4.5rem;
+            //color: #FFFFFF;
         }
     }
 }
@@ -63,19 +73,28 @@
             padding: 7px;
             background-color: #FFFFFF;
         }
+        #error {
+            display: none;
+        }
         button {
             padding: 7px;
             background-color: #000000;
             color: #FFFFFF;
         }
     }
+    #success {
+        display: none;
+    }
 }
 
 #sct-spotify {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 40px;
+    margin-left: 115px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    display: flex;
 }
 
 footer {
