@@ -10,7 +10,6 @@
           box-sizing: border-box;
   color: black;
   font-family: 'Brique';
-  background-image: src("../re");
 }
 
 .flex-column {
@@ -31,10 +30,11 @@
 
 #main {
   background: url("../resources/Fondo-web-para-Fede.svg");
+  background-size: cover;
 }
 
 #sct-titlecountdown {
-  margin-top: -20px;
+  margin-top: -50px;
   margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +62,11 @@
 }
 
 #sct-titlecountdown #img-title {
-  height: 450px;
+  height: 500px;
+}
+
+#sct-titlecountdown #countdown {
+  margin-top: -60px;
 }
 
 #sct-titlecountdown #countdown h1 {
@@ -118,9 +122,11 @@
 }
 
 #sct-spotify {
-  margin-top: 25px;
-  margin-bottom: 40px;
-  margin-left: 115px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 65px;
+  margin-right: -95px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

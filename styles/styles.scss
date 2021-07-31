@@ -10,7 +10,7 @@
     color: black;
     font-family: 'Brique';
     //background-color: #8a1313;
-    background-image: src('../re');
+    //background-image: src('../re');
 }
 
 .flex-column {
@@ -22,10 +22,11 @@
 
 #main {
     background: url("../resources/Fondo-web-para-Fede.svg");
+    background-size:cover;
 }
 
 #sct-titlecountdown {
-    margin-top: -20px;
+    margin-top: -50px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
@@ -36,9 +37,10 @@
         padding: 0 15px;
     }
     #img-title {
-        height: 450px;
+        height: 500px;
     }
     #countdown {
+        margin-top: -60px;
         h1 {
             font-family: Brique;
             //color: #FFFFFF;
@@ -88,9 +90,11 @@
 }
 
 #sct-spotify {
-    margin-top: 25px;
-    margin-bottom: 40px;
-    margin-left: 115px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 65px;
+    margin-right: -95px;
     height: fit-content;
     display: flex;
     flex-direction: column;
