@@ -29,11 +29,22 @@
 }
 
 #main {
-  background: url("../resources/Fondo-web-para-Fede.svg");
-  background-size: cover;
+  /*background: url("../resources/Fondo-web-para-Fede.svg");
+    background-size:cover;*/
 }
 
-#sct-titlecountdown {
+#main #back-img {
+  z-index: -10;
+  top: 0;
+  width: 100%;
+}
+
+#main #absolute-body {
+  position: absolute;
+  top: 0;
+}
+
+#main #absolute-body #sct-titlecountdown {
   margin-top: -50px;
   margin-bottom: 25px;
   display: -webkit-box;
@@ -49,7 +60,7 @@
 }
 
 @media screen and (max-width: 425px) {
-  #sct-titlecountdown {
+  #main #absolute-body #sct-titlecountdown {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -61,25 +72,25 @@
   }
 }
 
-#sct-titlecountdown #img-title {
+#main #absolute-body #sct-titlecountdown #img-title {
   height: 500px;
 }
 
-#sct-titlecountdown #countdown {
+#main #absolute-body #sct-titlecountdown #countdown {
   margin-top: -60px;
 }
 
-#sct-titlecountdown #countdown h1 {
+#main #absolute-body #sct-titlecountdown #countdown h1 {
   font-family: Brique;
 }
 
 @media screen and (max-width: 425px) {
-  #sct-titlecountdown #countdown h1 {
+  #main #absolute-body #sct-titlecountdown #countdown h1 {
     font-size: 20px;
   }
 }
 
-#sct-titlecountdown #countdown li {
+#main #absolute-body #sct-titlecountdown #countdown li {
   display: inline-block;
   font-size: 1.5em;
   list-style-type: none;
@@ -88,45 +99,43 @@
 }
 
 @media screen and (max-width: 425px) {
-  #sct-titlecountdown #countdown li {
+  #main #absolute-body #sct-titlecountdown #countdown li {
     font-size: 1em;
   }
 }
 
-#sct-titlecountdown #countdown li span {
+#main #absolute-body #sct-titlecountdown #countdown li span {
   display: block;
   font-size: 4.5rem;
 }
 
-#sct-contact {
+#main #absolute-body #sct-contact {
   margin-bottom: 40px;
 }
 
-#sct-contact #form #email {
+#main #absolute-body #sct-contact #form #email {
   padding: 7px;
   background-color: #FFFFFF;
 }
 
-#sct-contact #form #error {
+#main #absolute-body #sct-contact #form #error {
   display: none;
 }
 
-#sct-contact #form button {
+#main #absolute-body #sct-contact #form button {
   padding: 7px;
   background-color: #000000;
   color: #FFFFFF;
 }
 
-#sct-contact #success {
+#main #absolute-body #sct-contact #success {
   display: none;
 }
 
-#sct-spotify {
+#main #absolute-body #sct-spotify {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 65px;
-  margin-right: -95px;
+  top: 60px;
+  left: 99%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

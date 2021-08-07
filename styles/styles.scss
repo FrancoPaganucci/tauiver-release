@@ -21,84 +21,90 @@
 }
 
 #main {
-    background: url("../resources/Fondo-web-para-Fede.svg");
-    background-size:cover;
-}
-
-#sct-titlecountdown {
-    margin-top: -50px;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media screen and (max-width: 425px) {
-        display: flex;
-        flex-direction: column;
-        padding: 0 15px;
+    /*background: url("../resources/Fondo-web-para-Fede.svg");
+    background-size:cover;*/
+    #back-img {
+        z-index: -10;
+        top: 0;
+        width: 100%;
     }
-    #img-title {
-        height: 500px;
-    }
-    #countdown {
-        margin-top: -60px;
-        h1 {
-            font-family: Brique;
-            //color: #FFFFFF;
+    #absolute-body {
+        position: absolute;
+        top: 0;
+        #sct-titlecountdown {
+            margin-top: -50px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             @media screen and (max-width: 425px) {
-                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+                padding: 0 15px;
+            }
+            #img-title {
+                height: 500px;
+            }
+            #countdown {
+                margin-top: -60px;
+                h1 {
+                    font-family: Brique;
+                    //color: #FFFFFF;
+                    @media screen and (max-width: 425px) {
+                        font-size: 20px;
+                    }
+                }
+                li {
+                    display: inline-block;
+                    font-size: 1.5em;
+                    //color: #FFFFFF;
+                    list-style-type: none;
+                    padding: 1em;
+                    text-transform: uppercase;
+                    @media screen and (max-width: 425px) {
+                        font-size: 1em;
+                    }
+                  }
+                  
+                li span {
+                    display: block;
+                    font-size: 4.5rem;
+                    //color: #FFFFFF;
+                }
             }
         }
-        li {
-            display: inline-block;
-            font-size: 1.5em;
-            //color: #FFFFFF;
-            list-style-type: none;
-            padding: 1em;
-            text-transform: uppercase;
-            @media screen and (max-width: 425px) {
-                font-size: 1em;
+        
+        #sct-contact {
+            margin-bottom: 40px;
+            #form {
+                #email {
+                    padding: 7px;
+                    background-color: #FFFFFF;
+                }
+                #error {
+                    display: none;
+                }
+                button {
+                    padding: 7px;
+                    background-color: #000000;
+                    color: #FFFFFF;
+                }
             }
-          }
-          
-        li span {
-            display: block;
-            font-size: 4.5rem;
-            //color: #FFFFFF;
+            #success {
+                display: none;
+            }
+        }
+        
+        #sct-spotify {
+            position: absolute;
+            top: 60px;
+            left: 99%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            display: flex;
         }
     }
-}
-
-#sct-contact {
-    margin-bottom: 40px;
-    #form {
-        #email {
-            padding: 7px;
-            background-color: #FFFFFF;
-        }
-        #error {
-            display: none;
-        }
-        button {
-            padding: 7px;
-            background-color: #000000;
-            color: #FFFFFF;
-        }
-    }
-    #success {
-        display: none;
-    }
-}
-
-#sct-spotify {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 65px;
-    margin-right: -95px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    display: flex;
 }
 
 footer {
