@@ -9,8 +9,6 @@
     box-sizing: border-box;
     color: black;
     font-family: 'Brique';
-    //background-color: #8a1313;
-    //background-image: src('../re');
 }
 
 .flex-column {
@@ -21,59 +19,52 @@
 }
 
 #main {
-    /*background: url("../resources/Fondo-web-para-Fede.svg");
-    background-size:cover;*/
-    #back-img {
-        z-index: -10;
-        top: 0;
-        width: 100%;
-    }
-    #absolute-body {
-        position: absolute;
-        top: 0;
-        #sct-titlecountdown {
-            margin-top: -50px;
-            margin-bottom: 25px;
+    background-image: url("../resources/Fondo-web-para-tau-II.png");
+    background-size: cover;
+    #sct-titlecountdown {
+        margin-top: -50px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (max-width: 425px) {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            @media screen and (max-width: 425px) {
-                display: flex;
-                flex-direction: column;
-                padding: 0 15px;
+            padding: 0 15px;
+        }
+        #img-title {
+            height: 500px;
+            @media screen and (max-width: 700px) {
+                height: 300px;
+                width: 300px;
+                margin-top: 100px;
             }
-            #img-title {
-                height: 500px;
-            }
-            #countdown {
-                margin-top: -60px;
-                h1 {
-                    font-family: Brique;
-                    //color: #FFFFFF;
-                    @media screen and (max-width: 425px) {
-                        font-size: 20px;
-                    }
+        }
+        #countdown {
+            margin-top: -60px;
+            ul {
+                @media screen and (max-width: 700px) {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 80px;
                 }
-                li {
-                    display: inline-block;
-                    font-size: 1.5em;
-                    //color: #FFFFFF;
-                    list-style-type: none;
-                    padding: 1em;
-                    text-transform: uppercase;
-                    @media screen and (max-width: 425px) {
-                        font-size: 1em;
-                    }
-                  }
-                  
-                li span {
-                    display: block;
-                    font-size: 4.5rem;
-                    //color: #FFFFFF;
+            }
+            li {
+                display: inline-block;
+                font-size: 1.5em;
+                list-style-type: none;
+                padding: 1em;
+                text-transform: uppercase;
+                @media screen and (max-width: 700px) {
+                    height: 50px;
+                }
+            }
+            li span {
+                display: block;
+                font-size: 4.5rem;
                 }
             }
         }
-        
         #sct-contact {
             margin-bottom: 40px;
             #form {
@@ -98,13 +89,15 @@
         #sct-spotify {
             position: absolute;
             top: 60px;
-            left: 99%;
+            right: 0;
             height: fit-content;
             display: flex;
             flex-direction: column;
             display: flex;
+            @media screen and (max-width: 700px) {
+               margin: 0 auto;
+            }
         }
-    }
 }
 
 footer {
