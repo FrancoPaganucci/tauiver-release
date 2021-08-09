@@ -21,6 +21,11 @@
 #main {
     background-image: url("../resources/Fondo-web-para-tau-II.png");
     background-size: cover;
+    @media screen and (max-width: 425px) {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+    }
     #sct-titlecountdown {
         margin-top: -50px;
         margin-bottom: 25px;
@@ -46,7 +51,7 @@
                 @media screen and (max-width: 700px) {
                     display: flex;
                     flex-direction: column;
-                    row-gap: 80px;
+                    //row-gap: 80px;
                 }
             }
             li {
@@ -57,7 +62,8 @@
                 text-transform: uppercase;
                 @media screen and (max-width: 700px) {
                     height: 50px;
-                    color: #FFFFFF
+                    color: #FFFFFF;
+                    margin-bottom: 80px;
                 }
             }
             li span {
