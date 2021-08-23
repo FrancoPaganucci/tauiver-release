@@ -131,6 +131,11 @@
   }
 }
 
+#main #sct-album {
+  margin-bottom: 40px;
+  margin-top: -70px;
+}
+
 #main #sct-contact {
   margin-bottom: 40px;
 }
